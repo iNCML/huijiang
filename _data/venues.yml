@@ -5,5 +5,27 @@
 "PhysRev":
   url: https://journals.aps.org/
 
-"Vision":
-  color: "#009f36"
+"CNN-SP-J":   # speech
+  color: "#82E0AA"
+
+"DNN-Apt":  # speech
+  color: "#82E0AA"
+
+"FOFE-NER": # NLP
+  color: "#F7DC6F"
+
+"FOFE": # NLP
+  color: "#F7DC6F"
+
+"STOCK": # NLP
+  color: "#F7DC6F"
+
+"SWE": # NLP
+  color: "#F7DC6F"
+
+"KNG-MRC": # NLP
+  color: "#F7DC6F"
+
+"FreebaseQA": # NLP
+  color: "#F7DC6F"
+
