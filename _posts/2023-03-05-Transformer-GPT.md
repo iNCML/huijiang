@@ -25,11 +25,7 @@ toc:
   - name: "Transformers: Forward Pass"
   - name: "Transformers: Backward Pass"
   - name: GPT-3
-    subsections:
-    - name: I. Estimating clean image
-    - name: II. Estimating noise
-  - name: Final Remarks
-
+  
 ---
 
 Transformers <d-cite key="vaswani2023attentionneed"></d-cite> are a type of neural network architecture designed to transform a sequence of $$ T $$ input vectors, 

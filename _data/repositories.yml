@@ -1,6 +1,5 @@
 github_users:
-  - iNCML
-  - Visualize-ML
+  #- iNCML
 
 repo_description_lines_max: 2
 
