@@ -11,7 +11,7 @@ related_publications: true
 This project is about my recent textbook {% cite Jiang-MLF-2021 %}:
 
 [Machine Learning Fundamentals](https://www.amazon.com/Machine-Learning-Fundamentals-Concise-Introduction/dp/1108940021)
-©[Hui Jiang](https://www.cse.yorku.ca/~huijiang) 2021, published by 
+©[Hui Jiang](https://incml.github.io/huijiang//) 2021, published by 
 [Cambridge University Press](https://www.cambridge.org/ca/academic/subjects/computer-science/pattern-recognition-and-machine-learning/machine-learning-fundamentals-concise-introduction?format=PB). 
 
 * [GitHub Site](https://github.com/iNCML/MachineLearningBook): the companion repository for supplementary  materials

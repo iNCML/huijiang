@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-My new book “Machine Learning Fundamentals” ©Hui Jiang 2021, is recently published by Cambridge University Press. Check [here](https://wiki.eecs.yorku.ca/user/hj/research:mlfbook) for details.
+My new book “Machine Learning Fundamentals” ©Hui Jiang 2021, is recently published by Cambridge University Press. Check [here](../../blog/2022/Machine-Learning-Fundamentals/) for details.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
