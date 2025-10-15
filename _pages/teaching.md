@@ -12,7 +12,7 @@ Organize all courses by years, topics:
 * 2025-26
 	* Fall: [EECS3405A Fundamentals of Machine Learning](https://eclass.yorku.ca/course/view.php?id=141534)
 	* Fall: [EECS6327M Probabilistic Models & Machine Learning](https://eclass.yorku.ca/course/view.php?id=144893)
-	* Winter: EECS4405M Advanced Machine Learning
+	* Winter: [EECS4405M Advanced Machine Learning](https://eclass.yorku.ca/course/view.php?id=141535)
 * 2024-25  <!--- dean's after-ifly buyout 1/3 ; overload 1/3 -->
     * Fall: [EECS3405A Fundamentals of Machine Learning](https://eclass.yorku.ca/course/view.php?id=126576)
     * Fall: [EECS6327M Probabilistic Models & Machine Learning](https://eclass.yorku.ca/course/view.php?id=115776)
