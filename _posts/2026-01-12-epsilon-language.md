@@ -192,34 +192,41 @@ Let $\theta$ denote a latent intention and $X$ a surface linguistic signal. Huma
 
 1. **Inherent variability in production**  
    Speakers do not produce perfectly deterministic signals for intentions.  
+
    $$
    H(X \mid \theta) > 0.
    $$
 
 2. **Redundancy and recoverability in comprehension**  
    Listeners consistently recover the intended meaning despite variability:  
+
    $$
    \Pr(\theta_0 \mid x) \text{ is typically high}.
    $$
 
 This requires that the conditional distribution over intentions,
+
 $$
 q(\theta \mid x),
 $$
+
 be **sharply peaked** but not a delta distribution. Formally, this implies:
+
 $$
 q(\theta_0 \mid x) = 1 - \varepsilon(x),
 $$
-where ε(x) captures the intrinsic noise or ambiguity.
 
-If ε(x) were zero:
+where $\varepsilon(x)$ captures the intrinsic noise or ambiguity.
+
+If $\varepsilon(x)$ were zero:
 - Language would be fully deterministic, like a programming language.  
 - Yet natural languages support ellipsis, metaphor, deixis, and underspecification—contradicting determinism.
 
-If ε(x) were large:
+If $\varepsilon(x)$ were large:
 - Communication would be unreliable and human languages could not function as coordination tools <d-cite key="Lewis1969Convention"></d-cite>.
 
 Thus, human language must live in the intermediate regime:
+
 $$
 0 < \varepsilon(x) \ll 1.
 $$
@@ -233,6 +240,7 @@ Given Shannon’s channel coding theorem, any efficient communication system mus
 $$
 H(\Theta \mid X) > 0,
 $$
+
 unless compressed messages carry arbitrarily large complexity.
 
 Natural languages are highly compressed representations of latent intentions. For compression to be efficient:
@@ -250,6 +258,7 @@ $$
 must also hold.
 
 This yields:
+
 $$
 0 < \varepsilon(x) \ll 1.
 $$
@@ -274,6 +283,7 @@ leading again to:
 $$
 \Pr(\theta_0 \mid x) \approx 1 - \varepsilon(x)
 $$
+
 for some small $\varepsilon$.
 
 The ε term mathematically captures the trade-off between:
@@ -319,6 +329,7 @@ Thus:
 $$
 \Pr(\theta_0 \mid x) = 1 - \varepsilon(x)
 $$
+
 emerges naturally as a mathematical property of Bayesian interpretation under realistic priors and likelihoods.
 
 This shows that **ε-ambiguity is a mathematically inevitable property of any communicative system interpreted via Bayesian reasoning**, which includes both humans and LLMs.
