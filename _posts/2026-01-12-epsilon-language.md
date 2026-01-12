@@ -1,12 +1,12 @@
 ---
 layout: distill
 title: Natural Languages as ε-Ambiguity Languages
-description: This post examines the claim that natural languages are ε-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>. Under this “ε-ambiguity language” framework, a language is ε-ambiguous if, for any message x, there exists a dominant intended meaning θ₀ such that Pr( θ₀ \| x) >  1 - ε(x), with ε(x) in [0,1),  but alternative interpretations occur with small but non-zero probability. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
+description: This post examines the claim that natural languages are ε-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>. Under this “ε-ambiguity language” framework, a language is ε-ambiguous if, for any meaningful message x, there exists a dominant intended meaning such that its posterior probability is sufficiently large but alternative interpretations occur with small but non-zero probability. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
 date: 2026-01-12
 future: true
 htmlwidgets: true
 hidden: false
-tags: language ε-Ambiguity
+tags: language Ambiguity
 
 authors:
   - name: Hui Jiang
@@ -44,9 +44,9 @@ Recent theoretical work <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite> int
 ### Model Definition
 As in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>, we assume:
 
-- A latent intention space $\Theta$.
-- A surface linguistic expression *x* generated via a distribution $q(x | \theta)$.
-- A listener infers meaning via the posterior probability $Pr(\theta| x)$.
+ - A latent intention space $\Theta$,
+ - A surface linguistic expression $x$ generated via a distribution $q(x | \theta)$ with $\theta \in \Theta$.
+ - A listener infers meaning via the posterior probability $Pr(\theta| x)$.
 
 A language is an **ε-ambiguity language** if for every meaningful expression x:
 
@@ -54,13 +54,12 @@ $$
 \Pr(\theta_0 \mid x) \ge 1 - \varepsilon(x),
 $$
 
-where:
-- $\theta_0$ is the intended meaning,
-- $\varepsilon(x)$ quantifies residual ambiguity.
+where $\theta_0$ is the intended meaning, and $\varepsilon(x)$ quantifies residual ambiguity.
 
 This describes a *sparse posterior* over meanings: a dominant intention and a long but very small tail of alternatives.
 
 ### Consequences
+
 This model predicts that:
 
 1. Communication is reliable but not deterministic.  
@@ -89,7 +88,7 @@ $$
 \Pr(\theta_0 \mid x) \approx 1 - \varepsilon(x), \quad \varepsilon(x) \text{ small but nonzero},
 $$
 
-where θ₀ is the dominant sense.
+where $\theta_0$ is the dominant sense.
 
 ### Syntactic Ambiguity
 Classic syntactic ambiguities (e.g., *“I saw the man with the telescope”*) allow multiple parses, yet listeners overwhelmingly adopt one interpretation when context is provided. Probabilistic grammars assign steeply skewed probability distributions to parses <d-cite key="CharniakJohnson2005CoarseToFinee"></d-cite>, again demonstrating nonzero but concentrated posterior distributions over intentions.
@@ -116,7 +115,7 @@ This supports the claim that:
 ### Context-Dependence and Disambiguation
 Work in contextual integration  <d-cite key="MacDonaldPearlmutterSeidenberg1994LexicalAmbiguity"></d-cite>  shows that humans update interpretations probabilistically as context accumulates, consistent with the multiplicative reduction in ambiguity predicted by ε-ambiguity theory, i.e. Proposition 1 in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>.
 
-The ε-ambiguity model predicts (and proves) that when a listener receives multiple messages \(x_1, x_2, \dots, x_m\) generated from the same θ:
+The ε-ambiguity model predicts (and proves) that when a listener receives multiple messages $(x_1, x_2, \dots, x_m )$ generated from the same θ:
 
 $$
 \varepsilon_{\text{combined}} \approx \varepsilon(x_1)\varepsilon(x_2)\cdots\varepsilon(x_m).
@@ -132,7 +131,7 @@ Thus ε plays the role in controlling inference quality.
 
 ### Repair Mechanisms
 
-Conversation analysis <d-cite key="SchegloffJeffersonSacks1977SelfCorrection"></d-cite> shows that misunderstandings occur at low but non-zero frequency, and repair strategies efficiently correct them—suggesting that ε(x) is generally small but salient.
+Conversation analysis <d-cite key="SchegloffJeffersonSacks1977SelfCorrection"></d-cite> shows that misunderstandings occur at low but non-zero frequency, and repair strategies efficiently correct them—suggesting that $\varepsilon(x)$ is generally small but salient.
 
 ### Cooperative Principle
 
@@ -149,16 +148,17 @@ even when multiple interpretations are technically possible.
 
 ## **Evidence from Computational Linguistics**
 
- ### Corpus-Based Skew of Meaning Distributions
+
+### Corpus-Based Skew of Meaning Distributions
 Probabilistic models such as topic models, PCFGs, and neural parsers show extreme sparsity in the joint distribution of meanings and linguistic forms 
 <d-cite key="ManningSchutze1999StatNLP"></d-cite>. For example:
 - One parse typically has probability ≫ 0.9,
 - Alternate parses share the remaining mass.
 
-This sparsity is exactly the structure assumed for ε-ambiguous languages.
+This sparsity is exactly the structure assumed for $\varepsilon$-ambiguous languages.
 
 ### Behavior of Large Language Models
-LLMs themselves reveal ε-like behavior:
+LLMs themselves reveal $\varepsilon$-like behavior:
 
 #### Sensitivity to Prompt Ambiguity
 When prompts are under-specified, LLM outputs diverge, demonstrating non-zero ε(x). When prompts are clarified or expanded (e.g., chain-of-thought prompting), the model’s output variance collapses—interpretable as effective ε(x) decreasing multiplicatively with additional linguistic evidence <d-cite key="Wei2022ChainOfThought"></d-cite>.
@@ -268,11 +268,13 @@ Natural languages accomplish this by encoding intentions in **probabilistic dist
 $$
 q(x \mid \theta) \text{ is broad, but structured},
 $$
+
 leading again to:
+
 $$
 \Pr(\theta_0 \mid x) \approx 1 - \varepsilon(x)
 $$
-for some small ε.
+for some small $\varepsilon$.
 
 The ε term mathematically captures the trade-off between:
 - variability (which increases expressive richness), and  
@@ -282,12 +284,12 @@ Thus **ε-ambiguity is not an accident** but a structural necessity for language
 
 ### Ambiguity Is Necessary for Compositionality
 
-A fully deterministic mapping from $\theta \to x $ (i.e. $\varepsilon = 0$ ) would break compositionality in languages such as English:
+A fully deterministic mapping from $ \theta \to x $ (i.e. $\varepsilon = 0$ ) would break compositionality in languages such as English:
 
 - Metaphor, ellipsis, and deixis require listeners to infer missing structure.
 - Rich morphology and syntax permit underspecified constructions that rely on inference rather than explicit specification.
 
-If ε were zero, all linguistic constructions would require exhaustive specification of intentions, leading to:
+If $\varepsilon$ were zero, all linguistic constructions would require exhaustive specification of intentions, leading to:
 
 - infinitely long messages,  
 - no pragmatic inference,  
@@ -302,6 +304,7 @@ Thus ε > 0 is a prerequisite for **efficient and human-like generative grammar*
 ## **Bayesian Models of Language Support ε-Ambiguity**
 
 Probabilistic pragmatics <d-cite key="GoodmanFrank2016PragmaticInference"></d-cite> models the listener as:
+
 $$
 \Pr(\theta \mid x) \propto \Pr(x \mid \theta)\Pr(\theta).
 $$
@@ -312,6 +315,7 @@ Empirically, these models consistently find:
 - a long tail of alternative intentions with total mass $\varepsilon(x)$
 
 Thus:
+
 $$
 \Pr(\theta_0 \mid x) = 1 - \varepsilon(x)
 $$
