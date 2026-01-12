@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Natural Languages as ε-Ambiguity Languages
-description: This post examines the claim that natural languages are ε-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in (Jiang, 2023). This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
+description: In this post, we examines the claim that natural languages are ε-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure.
 date: 2026-01-12
 future: true
 htmlwidgets: true
@@ -44,9 +44,9 @@ Recent theoretical work <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite> int
 ### Model Definition
 As in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>, we assume:
 
- - A latent intention space $\Theta$,
- - A surface linguistic expression $x$ generated via a distribution $q(x | \theta)$ with $\theta \in \Theta$.
- - A listener infers meaning via the posterior probability $Pr(\theta| x)$.
+ - A latent intention space $$\Theta$$,
+ - A surface linguistic expression $x$ generated via a distribution $$q(x | \theta)$$ with $$\theta \in \Theta$$.
+ - A listener infers meaning via the posterior probability $$\Pr(\theta| x)$$.
 
 A language is an **ε-ambiguity language** if for every meaningful expression x:
 
