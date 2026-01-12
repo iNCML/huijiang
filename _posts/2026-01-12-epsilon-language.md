@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: Natural Languages as \epsilon-Ambiguity Languages
-description: This post examines the claim that natural languages are \epsilon-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in (Jiang, 2023). Under this “\epsilon-ambiguity language” framework, a language is \epsilon-ambiguous if, for any meaningful message, there exists a dominant intended meaning such that its posterior probability is sufficiently large but alternative interpretations occur with small but non-zero probability. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
+title: Natural Languages as ε-Ambiguity Languages
+description: This post examines the claim that natural languages are ε-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in (Jiang, 2023). This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
 date: 2026-01-12
 future: true
 htmlwidgets: true
@@ -84,6 +84,7 @@ We demonstrate that evidence comes from multiple research domains.
 Natural languages contain extensive lexical ambiguity <d-cite key="Lyons1977Semantics"></d-cite> <d-cite key="Cruse1986LexicalSemantics"></d-cite>. Words often possess multiple senses (e.g., *bank*, *seal*, *interest*), yet human speakers reliably infer the dominant meaning from context. Corpus-based studies of word sense disambiguation have shown that sense distributions are often highly skewed, with the most frequent sense accounting for a large majority of occurrences <d-cite key="Kilgarriff1992Polysemy"></d-cite> <d-cite key="Yarowsky1993OneSensePerCollocation"></d-cite> <d-cite key="Kilgarriff2004DominantSense"></d-cite>.
 
 This illustrates exactly the condition:
+
 $$
 \Pr(\theta_0 \mid x) \approx 1 - \varepsilon(x), \quad \varepsilon(x) \text{ small but nonzero},
 $$
