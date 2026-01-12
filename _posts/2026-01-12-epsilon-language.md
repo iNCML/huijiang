@@ -1,12 +1,12 @@
 ---
 layout: distill
-title: Natural Languages as ε-Ambiguity Languages
-description: This post examines the claim that natural languages are ε-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>. Under this “ε-ambiguity language” framework, a language is ε-ambiguous if, for any meaningful message x, there exists a dominant intended meaning such that its posterior probability is sufficiently large but alternative interpretations occur with small but non-zero probability. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
+title: Natural Languages as \epsilon-Ambiguity Languages
+description: This post examines the claim that natural languages are \epsilon-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in (Jiang, 2023). Under this “\epsilon-ambiguity language” framework, a language is \epsilon-ambiguous if, for any meaningful message, there exists a dominant intended meaning such that its posterior probability is sufficiently large but alternative interpretations occur with small but non-zero probability. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
 date: 2026-01-12
 future: true
 htmlwidgets: true
 hidden: false
-tags: language Ambiguity
+tags: natural-language epsilon-ambiguity
 
 authors:
   - name: Hui Jiang
