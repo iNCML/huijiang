@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: Natural Languages as ε-Ambiguity Languages -- Evidence and Theoretical Justification
-description: This post examines the claim that natural languages are *ε-ambiguity languages* in the sense defined by the probabilistic theories of language and latent-intention inference in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>. Under this “ε-ambiguity language” framework, a language is ε-ambiguous if, for any message $x$, there exists a dominant intended meaning $\theta_0$ such that $\Pr(\theta_0 \mid x) \ge 1 - \varepsilon(x)$, with $\varepsilon(x) \in [0,1)$,  but alternative interpretations occur with small but non-zero probability. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
+title: Natural Languages as ε-Ambiguity Languages
+description: This post examines the claim that natural languages are ε-ambiguity languages in the sense defined by the probabilistic theories of language and latent-intention inference in <d-cite key="Jiang2023LatentSpaceEmergent"></d-cite>. Under this “ε-ambiguity language” framework, a language is ε-ambiguous if, for any message x, there exists a dominant intended meaning θ₀ such that Pr( θ₀ \| x) >  1 - ε(x), with ε(x) in [0,1),  but alternative interpretations occur with small but non-zero probability. This article surveys linguistic, psycholinguistic, and computational evidence demonstrating that natural languages exhibit precisely this structure -- they are neither perfectly unambiguous nor fully ambiguous, but instead allow for reliably dominant meanings with bounded ambiguity.
 date: 2026-01-12
 future: true
 htmlwidgets: true
@@ -15,7 +15,7 @@ authors:
       name: York University, Toronto, Canada
   
 # must be the exact same name as your blogpost
-bibliography: 2026-01-12-language.bib  
+bibliography: 2026-01-12-epsilon-language.bib
 
 # Add a table of contents to your post.
 #   - make sure that TOC names match the actual section names
