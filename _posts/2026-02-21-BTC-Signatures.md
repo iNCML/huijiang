@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Elliptic Curve Digital Signatures in Bitcoin
-description: In this post, we explain the cryptographic use of elliptic curves by first building the underlying finite abelian group structure, and then deriving ECDSA and Schnorr signatures (including ahe  multi-signature (multisig) scheme), which are currently used in the Bitcoin network.
+description: In this post, we explain the cryptographic use of elliptic curves by first building the underlying finite abelian group structure, and then deriving ECDSA and Schnorr signatures, as well as the  multi-signature (MuSig) scheme, which are currently used in the Bitcoin network.
 date: 2026-02-21
 future: true
 htmlwidgets: true
