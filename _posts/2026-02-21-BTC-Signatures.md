@@ -50,7 +50,7 @@ $$
 E: \quad y^2 = x^3 + ax + b.
 $$
 
-What “points on the curve” means depends on the underlying set for $(x,y)$:
+What “points on the curve” means depends on the underlying set for $$ (x,y)$$:
 
 - Over $\mathbb{R}$: infinitely many points; you can draw the familiar smooth curve.
 - Over a finite field $\mathbb{F}_p$ (prime $p$): **only finitely many points**, hence a **finite group**.
@@ -151,7 +151,7 @@ $$
 
 ### Case B: Vertical line 
 
-In thi scase $x_1 = x_2$ and $y_1 \equiv -y_2 \pmod p$.
+In this scase $x_1 = x_2$ and $y_1 \equiv -y_2 \pmod p$.
 The line through $P$ and $Q$ is “vertical”, so the sum is the identity:
 
 $$
@@ -315,8 +315,10 @@ $$
 ##### Step 3: Compute an EC point
 
 $$ 
-R = kG = (x_R, y_R) $$ $$ r = x_R \; \text{mod} \; n
-$$
+R = kG = (x_R, y_R) 
+$$ 
+
+where choose $$ r = x_R \; \pmod{n} $$
 
 ##### Step 4: Compute signature 
 
@@ -329,6 +331,7 @@ $$ s = k^{-1}(e + rd) \; \text{mod} \; n $$
 Given the signature $ (r,s) $ and the message $m$:
 
 ##### Step 1: Hash the message $m$
+
 $$ 
 e = H(m) 
 $$ 
@@ -349,6 +352,7 @@ $$
 
 
 ##### Step 3: produce the result using the public key $Q$ 
+
 $$ P = u_1 G + u_2 Q $$
 
 ##### Step 4: verification
@@ -368,7 +372,8 @@ Rearrange:
 $$ k = s^{-1}(e + rd) $$
 
 Verification undoes the signing process to reconstruct the same $R$: 
-$$ P = s^{-1}(e + rd)G = kG = R $$
+
+$$ P = e s^{-1} G + r s^{-1} Q = s^{-1}(e + rd)G = kG = R $$
 
 
 ### 2.1.4 ECDSA Diagram
@@ -403,22 +408,22 @@ This forces a unique canonical form (the “lower half” value of $s$), which h
 
 Given message $ m $:
 
-1. Choose a random $ k  \in \{ 1,2, \cdots, n-1 \}$:
+* Choose a random $ k  \in \{ 1,2, \cdots, n-1 \}$:
 
 $$ 
 R = kG 
 $$
 
-2. Compute challenge: 
+* Compute challenge: 
 
 $$ 
 e = H(R \| Q \| m) 
 $$
 
-3. Compute response: 
+* Compute response: 
 
 $$ 
-s = k + e \,d \; \text{mod} \; n 
+s = k + e \,d \; \pmod{n} 
 $$
 
 Signature is generated as $$ (R, s).$$
@@ -426,20 +431,20 @@ Signature is generated as $$ (R, s).$$
 
 ### 2.2.2 Verification
 
-1. Compute challenge in the same way as above: 
+* Compute challenge in the same way as above: 
 
 $$ 
 e = H(R \| Q \| m) 
 $$
 
-2. Compute:
+* Compute:
 
 $$ 
 P  =  s G  - e Q 
 $$
 
 
-3. Accept if: 
+* Accept if: 
 
 $$ 
 x_P \equiv x_R \; \text{mod} \; n 
@@ -459,7 +464,7 @@ $$ sG = kG + edG = R + eQ $$
 $$ \implies P = s G  - e Q  = R $$
 
 
-## 2.2.4 Why Do We Compute the Challenge $ e $ in Schnorr?
+## 2.2.4 Why Do We Compute the Challenge e in Schnorr?
 
 In the Schnorr signing algorithm, after computing the nonce point
 
@@ -467,7 +472,7 @@ $$
 R = kG,
 $$
 
-we compute the **challenge** using a cryptographic hash function $H(\cdot)$ as follows:
+we compute the **challenge** using a cryptographic hash function $$ H(\cdot) $$ as follows:
 
 $$
 e = H(R \,\|\, Q \,\|\, m),
@@ -475,30 +480,29 @@ $$
 
 which binds everything together:
 
-- $R$ = nonce commitment  
-- $Q $ = public key  
-- $m$ = message  
+- $$ R $$ = nonce commitment  
+- $$ Q $$ = public key  
+- $$ m $$ = message  
 
 This step is essential for **security and correctness**. Below is why.
 
-First of all, if we did not hash the message into the signature equation, the signature could be reused for different messages. Because $e$ depends on $m$, changing the message changes $e$, and therefore changes the final signature $s$. This guarantees that signature validity is message-dependent.
+First of all, if we did not hash the message into the signature equation, the signature could be reused for different messages. Because $$ e $$ depends on $$ m $$, changing the message changes $$ e $$, and therefore changes the final signature $$ s $$. This guarantees that signature validity is message-dependent.
 
-Secondly, if the nonce commitment $ R $ is not included in the hash that defines the challenge $e$, the Schnorr signature scheme becomes forgeable. Specifically, suppose the challenge is computed as $e = H( Q \,\|\, m)$, which does not depend on $ R $. A forger can then choose an arbitrary scalar  $s'$ and construct a forged signature  $ (R', s')$ by setting $ R' = s' G - e Q$. This pair will pass verification, because the verifier checks $s' G = R' + e Q$, which is always true from the way to choose $R'$. Thus, the forged signature satisfies the verification equation without requiring knowledge of the private key. In contrast, when the challenge is defined as $e = H( R \,\|\, Q \,\|\, m)$, the scheme is secure against this attack. In this case, the challenge depends on $ R $, so a forger cannot freely choose $s'$ and then compute a corresponding $R'$. Any attempt to construct $ R'$ requires knowing $e$ but $e$ itself depends on $ R'$, creating a circular dependency. This circularity prevents the attacker from generating a valid signature without the private key.
+Secondly, if the nonce commitment $$ R $$ is not included in the hash that defines the challenge $$ e $$, the Schnorr signature scheme becomes forgeable. Specifically, suppose the challenge is computed as $$ e = H( Q \,\|\, m) $$, which does not depend on $$ R $$. A forger can then choose an arbitrary scalar  $$ s' $$ and construct a forged signature  $$ (R', s') $$ by setting $$ R' = s' G - e Q $$. This pair will pass verification, because the verifier checks $$ s' G = R' + e Q $$, which is always true from the way to choose $$ R' $$. Thus, the forged signature satisfies the verification equation without requiring knowledge of the private key. In contrast, when the challenge is defined as $$ e = H( R \,\|\, Q \,\|\, m) $$, the scheme is secure against this attack. In this case, the challenge depends on $$ R $$, so a forger cannot freely choose $$ s' $$ and then compute a corresponding $$ R' $$. Any attempt to construct $$ R' $$ requires knowing $$ e $$ but $$ e $$ itself depends on $$ R' $$, creating a circular dependency. This circularity prevents the attacker from generating a valid signature without the private key.
 
-Finally, if the challenge $e$ is not bound to the public key $ Q $,  the scheme becomes vulnerable to a key-substitution (rogue-key) attack. Suppose the challenge is computed as  $e = H( R \,\|\, m)$,  so it does not depend on the public key. Given a valid signature $(R,s)$ on message $m$ under public key $ Q $, an attacker can construct a different public key
+Finally, if the challenge $$ e $$ is not bound to the public key $$ Q $$,  the scheme becomes vulnerable to a key-substitution (rogue-key) attack. Suppose the challenge is computed as  $$ e = H( R \,\|\, m) $$,  so it does not depend on the public key. Given a valid signature $$ (R,s) $$ on message $$ m $$ under public key $$ Q $$, an attacker can construct a different public key
 
 $$
    Q' = \frac{s G - R }{e} = e^{-1} (s G - R )
 $$
 
-Now consider verification under this new public key $Q'$. The verifier checks whether $P = R$ holds. Substituting the definition of $Q'$, the verification equation holds:
+Now consider verification under this new public key $$ Q' $$. The verifier checks whether $$ P = R $$ holds. Substituting the definition of $$ Q' $$, the verification equation holds:
 
 $$
 P = sG - e Q' = sG  - e \cdot e^{-1} (s G - R ) = R
 $$
 
-Consequently, the same signature $(R,s)$ is valid for the same message 
-$m$ under both the original public key  $Q$ and the attacker-constructed public key $Q'$.  In other words, anyone can take a genuine signature and fabricate a public key that makes the signature verify. This breaks the fundamental security property of digital signatures: the signature no longer proves that the holder of the original public key $Q$ produced it. Binding the challenge to the public key, i.e., $e = H( R \,\|\, Q \,\|\, m)$ prevents this attack, because the challenge would change if the public key were altered.
+Consequently, the same signature $$ (R,s) $$ is valid for the same message $$ m $$ under both the original public key  $$ Q $$ and the attacker-constructed public key $$ Q' $$.  In other words, anyone can take a genuine signature and fabricate a public key that makes the signature verify. This breaks the fundamental security property of digital signatures: the signature no longer proves that the holder of the original public key $$ Q $$ produced it. Binding the challenge to the public key, i.e., $$ e = H( R \,\|\, Q \,\|\, m) $$ prevents this attack, because the challenge would change if the public key were altered.
 
 
 ####   It Preserves Linearity (Crucial for MuSig)
@@ -509,16 +513,16 @@ $$
 s = k + ed
 $$
 
-is linear in the secret key $d$.
+is linear in the secret key $$ d $$.
 
-Since $e$ is a scalar derived from a hash, it preserves linear structure.  
+Since $$ e $$ is a scalar derived from a hash, it preserves linear structure.  
 This linearity enables:
 
 - Key aggregation  
 - Signature aggregation  
 - MuSig multi-signatures  
 
->**Takeaway:** The computation of $e = H(R \,\|\, P \,\|\, m)$ is what transforms Schnorr from a simple linear equation into a secure digital signature scheme.
+>**Takeaway:** The computation of $$ e = H(R \,\|\, P \,\|\, m) $$ is what transforms Schnorr from a simple linear equation into a secure digital signature scheme.
 
 
 ------------------------------------------------------------------------
