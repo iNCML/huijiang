@@ -15,7 +15,7 @@ authors:
       name: York University, Toronto, Canada
   
 # must be the exact same name as your blogpost
-bibliography: 2026-02-21-epsilon-language.bib
+bibliography: 2026-02-21-BTC-Signatures.bib
 
 # Add a table of contents to your post.
 #   - make sure that TOC names match the actual section names
@@ -35,8 +35,8 @@ toc:
 # Elliptic Curve Digital Signatures in Bitcoin
 
 > **Abstract** 
-> We explain the cryptographic use of elliptic curves by first building the underlying *finite abelian group* structure, and then deriving **ECDSA** and **Schnorr** signatures along with the  multi-signature (multisig) scheme, which are currently used in the Bitcoin network. See [Bitcoin Signature Lab](http://www.cse.yorku.ca/~huijiang/BTC/btc-signature-lab/) for an interactive demo to demenstrate all digital signature methods explained in this post.
----
+> We explain the cryptographic use of elliptic curves by first building the underlying *finite abelian group* structure, and then deriving **ECDSA** and **Schnorr** signatures along with the  multi-signature (multisig) scheme, which are currently used in the Bitcoin network. *See [Bitcoin Signature Lab](http://www.cse.yorku.ca/~huijiang/BTC/btc-signature-lab/) for an interactive demo to demenstrate all digital signature methods explained in this post.*
+
 
 # 1. Elliptic Curves as Finite Groups
 
@@ -50,7 +50,7 @@ $$
 E: \quad y^2 = x^3 + ax + b.
 $$
 
-What “points on the curve” means depends on the underlying set for $x,y$:
+What “points on the curve” means depends on the underlying set for $(x,y)$:
 
 - Over $\mathbb{R}$: infinitely many points; you can draw the familiar smooth curve.
 - Over a finite field $\mathbb{F}_p$ (prime $p$): **only finitely many points**, hence a **finite group**.
@@ -141,14 +141,17 @@ $$
 
 All arithmetic below is performed **modulo $p$** (for coordinates).
 
-#### Case A: $P = O$ or $Q = O$
+### Case A: Add to Identity
+
+In this case, we have $P = O$ or $Q = O$. Therefore, we define 
 
 $$
 P + O = P,\qquad O + Q = Q.
 $$
 
-#### Case B: $x_1 = x_2$ and $y_1 \equiv -y_2 \pmod p$ (vertical line)
+### Case B: Vertical line 
 
+In thi scase $x_1 = x_2$ and $y_1 \equiv -y_2 \pmod p$.
 The line through $P$ and $Q$ is “vertical”, so the sum is the identity:
 
 $$
@@ -157,9 +160,9 @@ $$
 
 This is exactly the group-theoretic inverse rule, since $Q=-P$ in this case. Therefore, we have $ P - P = P +(-P) = O$.
 
-#### Case C: $P \neq Q$ (general addition)
+### Case C: General Addition
 
-Compute the slope
+In this case, $P \neq Q$. We compute the slope
 
 $$
 m \equiv \frac{y_2 - y_1}{x_2 - x_1} \pmod p
@@ -184,7 +187,9 @@ $$
 
 > **Note.** The “reflect across the $x$-axis” step is already built into the formula for $y_3$ above.
 
-#### Case D: $P = Q$ (doubling)
+### Case D: Doubling
+
+In this case, we have $P = Q$, i.e., $P + Q = 2P$.
 
 If $y_1 \equiv 0 \pmod p$, then the tangent is vertical and
 
@@ -289,7 +294,7 @@ All scalar arithmetic is performed modulo $ n $.
 
 Due to the computational hardness of the Elliptic Curve Discrete Logarithm Problem (**ECDLP**), it is infeasible to recover the private key $d$ from the corresponding public key $Q$.  In a digital signature scheme, we assume that the holder of the private key—referred to as the signer—intends to authenticate a piece of information, called a **message**. The fundamental idea behind digital signatures is to design a secure signing algorithm in which the signer uses the private key to process the message and produce a value known as a **signature**, which is used to acknowledge the message. The signing procedure must be constructed so that no party can generate a valid signature without knowledge of the private key. The second phase is verification. In this phase, any party can execute a verification algorithm that uses only the public key, together with the **message** and the **signature**, to undo the processing in the signing stage to be able to check a specific deterministic condition. If the verification succeeds, it provides strong assurance that the signature was produced by the legitimate signer, since only the signer possesses the private key required to generate a valid signature.
 
-------------------------------------------------------------------------
+---
 
 ## 2.1 ECDSA
 
@@ -309,26 +314,38 @@ $$
 
 ##### Step 3: Compute an EC point
 
-$$ R = kG = (x_R, y_R) $$ $$ r = x_R \; \text{mod} \; n$$
+$$ 
+R = kG = (x_R, y_R) $$ $$ r = x_R \; \text{mod} \; n
+$$
 
 ##### Step 4: Compute signature 
 
 $$ s = k^{-1}(e + rd) \; \text{mod} \; n $$
 
-**Signature** is produced as $$ (r, s) $$
+**Signature** is produced as $ (r, s). $
 
 ### 2.1.2 Verification: message + signature + public key  →  accept/reject
 
 Given the signature $ (r,s) $ and the message $m$:
 
 ##### Step 1: Hash the message $m$
-$$ e = H(m) $$ 
+$$ 
+e = H(m) 
+$$ 
 
 ##### Step 2: process the message hash $e$ with signature $(r,s)$
 
-$$ w = s^{-1}  \; \text{mod} \; n $$ 
-$$ u_1 = ew \; \text{mod} \; n $$ \
-$$ u_2 = rw  \; \text{mod} \;  n $$
+$$ 
+w = s^{-1}  \; \text{mod} \; n 
+$$ 
+
+$$ 
+u_1 = ew \; \text{mod} \; n 
+$$ 
+
+$$ 
+u_2 = rw  \; \text{mod} \;  n 
+$$
 
 
 ##### Step 3: produce the result using the public key $Q$ 
@@ -336,16 +353,22 @@ $$ P = u_1 G + u_2 Q $$
 
 ##### Step 4: verification
 
-Accept if: $$ x_P \equiv r \; \text{mod} \; n $$
+Accept if: 
 
+$$ 
+x_P \equiv r \; \text{mod} \; n 
+$$
 
 ### 2.1.3 Why It Works
 
-From the signing formula: $$ s = k^{-1}(e + rd) $$
+From the signing formula: 
+$$ s = k^{-1}(e + rd) $$
 
-Rearrange: $$ k = s^{-1}(e + rd) $$
+Rearrange: 
+$$ k = s^{-1}(e + rd) $$
 
-Verification undoes the signing process to reconstruct the same $R$: $$ P = s^{-1}(e + rd)G = kG = R $$
+Verification undoes the signing process to reconstruct the same $R$: 
+$$ P = s^{-1}(e + rd)G = kG = R $$
 
 
 ### 2.1.4 ECDSA Diagram
@@ -371,7 +394,8 @@ Low-S normalization means:
 • If $s > n/2$, replace it with $s = n - s$.
 • Otherwise keep $s$ as is.
 This forces a unique canonical form (the “lower half” value of $s$), which helps prevent signature malleability in Bitcoin policy/consensus contexts.
-------------------------------------------------------------------------
+
+---
 
 ## 2.2 Schnorr Signature (BIP340)
  
@@ -381,31 +405,52 @@ Given message $ m $:
 
 1. Choose a random $ k  \in \{ 1,2, \cdots, n-1 \}$:
 
-$$ R = kG $$
+$$ 
+R = kG 
+$$
 
-2. Compute challenge: $$ e = H(R \| Q \| m) $$
+2. Compute challenge: 
 
-3. Compute response: $$ s = k + e \,d \; \text{mod} \; n $$
+$$ 
+e = H(R \| Q \| m) 
+$$
 
-Signature is generated as $$ (R, s) $$
+3. Compute response: 
+
+$$ 
+s = k + e \,d \; \text{mod} \; n 
+$$
+
+Signature is generated as $$ (R, s).$$
 
 
 ### 2.2.2 Verification
 
 1. Compute challenge in the same way as above: 
 
-$$ e = H(R \| Q \| m) $$
+$$ 
+e = H(R \| Q \| m) 
+$$
 
 2. Compute:
-$$ P  =  s G  - e Q $$
+
+$$ 
+P  =  s G  - e Q 
+$$
 
 
-3. Accept if: $$ x_P \equiv x_R \; \text{mod} \; n $$
+3. Accept if: 
+
+$$ 
+x_P \equiv x_R \; \text{mod} \; n 
+$$
 
 
 ### 2.2.3 Why It Works
 
-From the signing formula: $$ s = k + ed $$
+From the signing formula: 
+
+$$ s = k + ed $$
 
 Multiply by $ G $:
 
@@ -441,10 +486,13 @@ First of all, if we did not hash the message into the signature equation, the si
 Secondly, if the nonce commitment $ R $ is not included in the hash that defines the challenge $e$, the Schnorr signature scheme becomes forgeable. Specifically, suppose the challenge is computed as $e = H( Q \,\|\, m)$, which does not depend on $ R $. A forger can then choose an arbitrary scalar  $s'$ and construct a forged signature  $ (R', s')$ by setting $ R' = s' G - e Q$. This pair will pass verification, because the verifier checks $s' G = R' + e Q$, which is always true from the way to choose $R'$. Thus, the forged signature satisfies the verification equation without requiring knowledge of the private key. In contrast, when the challenge is defined as $e = H( R \,\|\, Q \,\|\, m)$, the scheme is secure against this attack. In this case, the challenge depends on $ R $, so a forger cannot freely choose $s'$ and then compute a corresponding $R'$. Any attempt to construct $ R'$ requires knowing $e$ but $e$ itself depends on $ R'$, creating a circular dependency. This circularity prevents the attacker from generating a valid signature without the private key.
 
 Finally, if the challenge $e$ is not bound to the public key $ Q $,  the scheme becomes vulnerable to a key-substitution (rogue-key) attack. Suppose the challenge is computed as  $e = H( R \,\|\, m)$,  so it does not depend on the public key. Given a valid signature $(R,s)$ on message $m$ under public key $ Q $, an attacker can construct a different public key
+
 $$
    Q' = \frac{s G - R }{e} = e^{-1} (s G - R )
 $$
+
 Now consider verification under this new public key $Q'$. The verifier checks whether $P = R$ holds. Substituting the definition of $Q'$, the verification equation holds:
+
 $$
 P = sG - e Q' = sG  - e \cdot e^{-1} (s G - R ) = R
 $$
@@ -504,19 +552,25 @@ This linearity enables:
 
 ------------------------------------------------------------------------
 
-# 3. Multi-Signatures and MuSig
+# 3. Multi-Signatures (MuSig)
 
-A multi-signature (multisig) scheme allows multiple parties to jointly authorize a message by requiring several independent signatures, typically under a policy such as n-of-n (e.g., all n signers must approve). Each participant signs the same message with their own private key, and the combined signatures are verified against the corresponding public keys.  MuSig (a Schnorr-based multisignature scheme) improves upon traditional multisig by aggregating multiple public keys into a single combined public key and producing one compact signature that is indistinguishable from a standard single-party Schnorr signature. The signers interact to generate nonces and partial signatures, which are then combined into one final signature. Verification requires only the aggregated public key, enhancing privacy, efficiency, and scalability compared to classical multisig constructions.  It is simple to implement multisig using Schnorr Because Schnorr is linear.
+A multi-signature (MuSig) scheme allows multiple parties to jointly authorize a message by requiring several independent signatures, typically under a policy such as n-of-n (e.g., all n signers must approve). Each participant signs the same message with their own private key, and the combined signatures are verified against the corresponding public keys.  MuSig (a Schnorr-based multisignature scheme) improves upon traditional multisig by aggregating multiple public keys into a single combined public key and producing one compact signature that is indistinguishable from a standard single-party Schnorr signature. The signers interact to generate nonces and partial signatures, which are then combined into one final signature. Verification requires only the aggregated public key, enhancing privacy, efficiency, and scalability compared to classical multisig constructions.  It is simple to implement multisig using Schnorr Because Schnorr is linear.
 
 Let two signers:
 
 $$ Q_1 = d_1 G, \quad  Q_2 = d_2 G $$
 
-Aggregate public key: $$ Q = Q_1 + Q_2 $$
+Aggregate public key: 
 
-Aggregate nonce: $$ R = R_1 + R_2 $$
+$$ Q = Q_1 + Q_2 $$
 
-Aggregate signature: $$ s = s_1 + s_2 $$
+Aggregate nonce: 
+
+$$ R = R_1 + R_2 $$
+
+Aggregate signature: 
+
+$$ s = s_1 + s_2 $$
 
 Verification can be done as usual:
 
