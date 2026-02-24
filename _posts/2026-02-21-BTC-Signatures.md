@@ -151,7 +151,7 @@ $$
 
 ### Case B: Vertical line 
 
-In this scase $x_1 = x_2$ and $y_1 \equiv -y_2 \pmod p$.
+In this case $x_1 = x_2$ and $y_1 \equiv -y_2 \pmod p$.
 The line through $P$ and $Q$ is “vertical”, so the sum is the identity:
 
 $$
