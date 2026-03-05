@@ -1,0 +1,703 @@
+metadata:
+  last_updated: '2026-03-05'
+papers:
+  lQi05ZkAAAAJ:-GalPxRzH2oC:
+    citations: 11
+    title: Unsupervised speaker adaptation of deep neural network based on the combination of speaker codes and singular value decomposition for speech recognition
+    year: '2015'
+  lQi05ZkAAAAJ:-YxgYmOPpg0C:
+    citations: 184
+    title: Distraction-Based Neural Networks for Modeling Document.
+    year: '2016'
+  lQi05ZkAAAAJ:0NBH3VY4scoC:
+    citations: 66
+    title: Distraction-Based Neural Networks for Document Summarization
+    year: '2016'
+  lQi05ZkAAAAJ:19TSbJurCDYC:
+    citations: 5
+    title: Why Learning of Large-Scale Neural Networks Behaves Like Convex Optimization
+    year: '2019'
+  lQi05ZkAAAAJ:1DepXQxl6QcC:
+    citations: 0
+    title: 'Bioinformatics Application: Predicting Protein Subcellular Localization by Applying Machine Learning'
+    year: '2007'
+  lQi05ZkAAAAJ:1DhOeZtQFr0C:
+    citations: 25
+    title: Solving large margin HMM estimation via semidefinite programming
+    year: '2006'
+  lQi05ZkAAAAJ:1EM7I_rJWO4C:
+    citations: 54
+    title: Revisiting word embedding for contrasting meaning
+    year: '2015'
+  lQi05ZkAAAAJ:1TSF5MOUvycC:
+    citations: 2
+    title: Feedforward sequential memory networks based encoder-decoder model for machine translation
+    year: '2017'
+  lQi05ZkAAAAJ:1aiWeP-z6tUC:
+    citations: 0
+    title: Classification of High-throughput Data Using Correlationshared Gene Clusters
+    year: '2011'
+  lQi05ZkAAAAJ:2253VHV31tMC:
+    citations: 113
+    title: A Bayesian predictive classification approach to robust speech recognition
+    year: '2000'
+  lQi05ZkAAAAJ:23OMmoBQBk8C:
+    citations: 145
+    title: Leverage financial news to predict stock price movements using word embeddings and deep neural networks
+    year: '2016'
+  lQi05ZkAAAAJ:279hWsFo9KEC:
+    citations: 122
+    title: Recurrent neural network-based sentence encoder with gated attention for natural language inference
+    year: '2017'
+  lQi05ZkAAAAJ:2BFwDa40mxQC:
+    citations: 0
+    title: Fixed-Size Ordinally Forgetting Encoding Based Word Sense Disambiguation
+    year: '2019'
+  lQi05ZkAAAAJ:2P1L_qKh6hAC:
+    citations: 10
+    title: Large margin estimation of n-gram language models for speech recognition via linear programming
+    year: '2010'
+  lQi05ZkAAAAJ:2lNr6VoPGyEC:
+    citations: 93
+    title: The fixed-size ordinally-forgetting encoding method for neural network language models
+    year: '2015'
+  lQi05ZkAAAAJ:2osOgNQ5qMEC:
+    citations: 104
+    title: Discriminative training of language models for speech recognition
+    year: '2002'
+  lQi05ZkAAAAJ:2tRrZ1ZAMYUC:
+    citations: 28
+    title: A cluster-based multiple deep neural networks method for large vocabulary continuous speech recognition
+    year: '2013'
+  lQi05ZkAAAAJ:3LFXdIMtrAwC:
+    citations: 10
+    title: The YorkNRM Systems for Trilingual EDL Tasks at TAC KBP 2016.
+    year: '2016'
+  lQi05ZkAAAAJ:3fE2CSJIrl8C:
+    citations: 16
+    title: Robust speech recognition based on Viterbi Bayesian predictive classification
+    year: '1997'
+  lQi05ZkAAAAJ:3s1wT3WcHBgC:
+    citations: 13
+    title: Normalization and transformation techniques for robust speaker recognition
+    year: '2008'
+  lQi05ZkAAAAJ:3zsHChvjpfQC:
+    citations: 9
+    title: FOFE-based Deep Neural Networks for Entity Discovery and Linking.
+    year: '2017'
+  lQi05ZkAAAAJ:4DMP91E08xMC:
+    citations: 40
+    title: Phase-based dual-microphone speech enhancement using a prior speech model
+    year: '2006'
+  lQi05ZkAAAAJ:4JMBOYKVnBMC:
+    citations: 28
+    title: A minimax search algorithm for CDHMM based robust continuous speech recognition.
+    year: '1998'
+  lQi05ZkAAAAJ:4OULZ7Gr8RgC:
+    citations: 5
+    title: State-codebook based quasi continuous density hidden Markov model with applications to recognition of Chinese syllables
+    year: '1994'
+  lQi05ZkAAAAJ:5nxA0vEk-isC:
+    citations: 18
+    title: A robust compensation strategy for extraneous acoustic variations in spontaneous speech recognition
+    year: '2002'
+  lQi05ZkAAAAJ:70eg2SAEIzsC:
+    citations: 3
+    title: Statistical Performance Analysis of MCE/GPD Learning in Gaussian Classifiers and Hidden Markov Models.
+    year: '2005'
+  lQi05ZkAAAAJ:7wO8s98CvbsC:
+    citations: 68
+    title: Rapid and effective speaker adaptation of convolutional neural network based models for speech recognition.
+    year: '2013'
+  lQi05ZkAAAAJ:8dk-3UP3FqQC:
+    citations: 19
+    title: A FOFE-based local detection approach for named entity recognition and mention detection
+    year: '2016'
+  lQi05ZkAAAAJ:9YU4pG19l3EC:
+    citations: 41
+    title: Annealed gradient descent for deep learning
+    year: '2020'
+  lQi05ZkAAAAJ:9ZlFYXVOiuMC:
+    citations: 17
+    title: Recent improvement on maximum relative margin estimation of HMMs for speech recognition
+    year: '2006'
+  lQi05ZkAAAAJ:9inzfELLWT4C:
+    citations: 4
+    title: 'The Lower The Simpler: Simplifying Hierarchical Recurrent Models'
+    year: '2019'
+  lQi05ZkAAAAJ:9q6z2NMJMYoC:
+    citations: 3236
+    title: Convolutional neural networks for speech recognition
+    year: '2014'
+  lQi05ZkAAAAJ:BqipwSGYUEgC:
+    citations: 8
+    title: A new verification-based fast match approach to large vocabulary speech recognition
+    year: '2001'
+  lQi05ZkAAAAJ:CrdmdnJxex8C:
+    citations: 1572
+    title: Enhanced lstm for natural language inference
+    year: '2017'
+  lQi05ZkAAAAJ:DlO-8NBk_-wC:
+    citations: 32
+    title: 'Hybrid orthogonal projection and estimation (HOPE): A new framework to learn neural networks'
+    year: '2016'
+  lQi05ZkAAAAJ:EUQCXRtRnyEC:
+    citations: 2
+    title: Automatic enrollment for speaker authentication.
+    year: '2002'
+  lQi05ZkAAAAJ:Ek_S3RZ0BcwC:
+    citations: 8
+    title: Generating images with recurrent adversarial networks. arXiv 2016
+    year: Unknown Year
+  lQi05ZkAAAAJ:Eu5-agfRY4IC:
+    citations: 119
+    title: 'Machine Learning Fundamentals: A Concise Introduction'
+    year: '2021'
+  lQi05ZkAAAAJ:ExyEeTBbt7kC:
+    citations: 4
+    title: Generating images with recurrent adversarial networks
+    year: '2016'
+  lQi05ZkAAAAJ:FI5ykjsP95gC:
+    citations: 8
+    title: 'A New Perspective on Machine Learning: How to do Perfect Supervised Learning'
+    year: '2019'
+  lQi05ZkAAAAJ:FPJr55Dyh1AC:
+    citations: 11
+    title: Combining information from multi-stream features using deep neural network in speech recognition
+    year: '2012'
+  lQi05ZkAAAAJ:G9wvEplfBxAC:
+    citations: 1
+    title: A robust training strategy against extraneous acoustic variations for spontaneous speech recognition.
+    year: '2000'
+  lQi05ZkAAAAJ:GU7uRbhnQ_0C:
+    citations: 5
+    title: Exploring Machine Reading Comprehension with Explicit Knowledge
+    year: '2018'
+  lQi05ZkAAAAJ:GgEoN24wTPsC:
+    citations: 46
+    title: Combing Context and Commonsense Knowledge Through Neural Networks for Solving Winograd Schema Problems.
+    year: '2017'
+  lQi05ZkAAAAJ:Ggqy4mf-avwC:
+    citations: 3
+    title: Phoneme modeling units design for Mandarin LVCSR systems
+    year: '2011'
+  lQi05ZkAAAAJ:GnPB-g6toBAC:
+    citations: 6
+    title: Nonlinear noise compensation in feature domain for speech recognition with numerical methods
+    year: '2004'
+  lQi05ZkAAAAJ:HDshCWvjkbEC:
+    citations: 11
+    title: A dynamic in-search discriminative training approach for large vocabulary speech recognition
+    year: '2002'
+  lQi05ZkAAAAJ:HoB7MX3m0LUC:
+    citations: 3
+    title: Large margin multinomial mixture model for text categorization.
+    year: '2008'
+  lQi05ZkAAAAJ:ILKRHgRFtOwC:
+    citations: 155
+    title: 'Investigation of deep neural networks (DNN) for large vocabulary continuous speech recognition: Why DNN surpasses GMMs in acoustic modeling'
+    year: '2012'
+  lQi05ZkAAAAJ:IjCSPb-OGe4C:
+    citations: 75
+    title: Large margin HMMs for speech recognition
+    year: '2005'
+  lQi05ZkAAAAJ:J8jFgkKsDJEC:
+    citations: 0
+    title: Large Margin HMMs For Speech Recognition
+    year: '2007'
+  lQi05ZkAAAAJ:JXi_AgyUMBAC:
+    citations: 47
+    title: Improving deep neural networks for LVCSR using dropout and shrinking structure
+    year: '2014'
+  lQi05ZkAAAAJ:K2M-mhe8R-QC:
+    citations: 0
+    title: Acoustic Modeling for Automatic Speech Recognition-Statistical Analysis of Minimum Classification Error Learning for Gaussian and Hidden Markov Model Classifiers
+    year: '2007'
+  lQi05ZkAAAAJ:K7YvBqpTqvwC:
+    citations: 14
+    title: Supervised Adversarial Networks for Image Saliency Detection
+    year: '2017'
+  lQi05ZkAAAAJ:KbBQZpvPDL4C:
+    citations: 56
+    title: Deep segmental neural networks for speech recognition.
+    year: '2013'
+  lQi05ZkAAAAJ:KlAtU1dfN6UC:
+    citations: 21
+    title: A minimax search algorithm for robust continuous speech recognition
+    year: '2000'
+  lQi05ZkAAAAJ:LQnPjgHbprEC:
+    citations: 21
+    title: A Fixed-Size Encoding Method for Variable-Length Sequences with its Application to Neural Network Language Models
+    year: '2015'
+  lQi05ZkAAAAJ:LkGwnXOMwfcC:
+    citations: 26
+    title: Improving Viterbi Bayesian predictive classification via sequential Bayesian learning in robust speech recognition
+    year: '1999'
+  lQi05ZkAAAAJ:M3NEmzRMIkIC:
+    citations: 6
+    title: Rapid adaptation of n-gram language models using inter-word correlation for speech recognition.
+    year: '2000'
+  lQi05ZkAAAAJ:MB4u-SWKN0MC:
+    citations: 0
+    title: Understanding Deep Learning in Theory
+    year: Unknown Year
+  lQi05ZkAAAAJ:MGzV0Qdvj_oC:
+    citations: 0
+    title: Speaker adaptive bottleneck features extraction for LVCSR based on discriminative learning of speaker codes
+    year: '2014'
+  lQi05ZkAAAAJ:NNPL2XyPKO8C:
+    citations: 50
+    title: On Approximation Capabilities of ReLU Activation and Softmax Output Layer in Neural Networks
+    year: '2020'
+  lQi05ZkAAAAJ:NQc3cRXltbQC:
+    citations: 10
+    title: Large margin hidden Markov models for speech recognition
+    year: '2005'
+  lQi05ZkAAAAJ:NU53l0vQ3PcC:
+    citations: 23
+    title: Deep Learning for Object Saliency Detection and Image Segmentation
+    year: '2015'
+  lQi05ZkAAAAJ:O3NaXMp0MMsC:
+    citations: 5
+    title: Discriminative training based on the criterion of least phone competing tokens for large vocabulary speech recognition
+    year: '2005'
+  lQi05ZkAAAAJ:O4XjznA6cfkC:
+    citations: 5
+    title: Dual Fixed-Size Ordinally Forgetting Encoding (FOFE) for Competitive Neural Language Models
+    year: '2018'
+  lQi05ZkAAAAJ:OCfQP8wG_bYC:
+    citations: 10
+    title: A General FOFE-net Framework for Simple and Effective Question Answering over Knowledge Bases
+    year: '2019'
+  lQi05ZkAAAAJ:ODN9lDrI8hIC:
+    citations: 24
+    title: Predicting protein functions by relaxation labelling protein interaction network
+    year: '2010'
+  lQi05ZkAAAAJ:OU6Ihb5iCvQC:
+    citations: 3
+    title: Utterance verification based on neighborhood information and Bayes factors
+    year: '2002'
+  lQi05ZkAAAAJ:OcBU2YAGkTUC:
+    citations: 279
+    title: Fast speaker adaptation of hybrid NN/HMM model for speech recognition based on discriminative learning of speaker code
+    year: '2013'
+  lQi05ZkAAAAJ:QC1gR0-g_BgC:
+    citations: 1
+    title: A topology-sharing based method for protein function prediction via analysis of protein functional association networks
+    year: '2009'
+  lQi05ZkAAAAJ:QIV2ME_5wuYC:
+    citations: 20
+    title: A constrained line search optimization method for discriminative training of HMMs
+    year: '2008'
+  lQi05ZkAAAAJ:QWeA35B1DCcC:
+    citations: 32
+    title: Compact Feedforward Sequential Memory Networks for Large Vocabulary Continuous Speech Recognition.
+    year: '2016'
+  lQi05ZkAAAAJ:RGFaLdJalmkC:
+    citations: 24
+    title: A new verification-based fast-match for large vocabulary continuous speech recognition
+    year: '2005'
+  lQi05ZkAAAAJ:RUJ4dIkaTBcC:
+    citations: 14
+    title: Learning convolutional neural networks using hybrid orthogonal projection and estimation
+    year: '2017'
+  lQi05ZkAAAAJ:RYcK_YlVTxYC:
+    citations: 7
+    title: Statistical analysis of minimum classification error learning for gaussian and hidden markov model classifiers
+    year: '2007'
+  lQi05ZkAAAAJ:SbtPZZD5bCsC:
+    citations: 5
+    title: Exploring question representation and adaptation with neural networks
+    year: '2017'
+  lQi05ZkAAAAJ:TA2J6If_vOcC:
+    citations: 17
+    title: Sequence training of multiple deep neural networks for better performance and faster training speed
+    year: '2014'
+  lQi05ZkAAAAJ:TFP_iSt0sucC:
+    citations: 8
+    title: A real-time Japanese broadcast news closed-captioning system.
+    year: '2001'
+  lQi05ZkAAAAJ:TxN98J45HB8C:
+    citations: 123
+    title: Enhancing and Combining Sequential and Tree LSTM for Natural Language Inference
+    year: '2016'
+  lQi05ZkAAAAJ:U2Z81Cgmbz8C:
+    citations: 1
+    title: Nonlinear noise compensation in feature domain with numerical methods
+    year: '2003'
+  lQi05ZkAAAAJ:UIDp_30-frIC:
+    citations: 0
+    title: An Investigation into Back-end Advancements for Speaker Recognition in Multi-Session and Noisy Enrollment
+    year: Unknown Year
+  lQi05ZkAAAAJ:URolC5Kub84C:
+    citations: 8
+    title: Gene network modular-based classification of microarray samples
+    year: '2012'
+  lQi05ZkAAAAJ:UeHWp8X0CEIC:
+    citations: 83
+    title: Robust speech recognition based on a Bayesian prediction approach
+    year: '1999'
+  lQi05ZkAAAAJ:UebtZRa9Y70C:
+    citations: 39
+    title: A new approach to utterance verification based on neighborhood information in model space
+    year: '2003'
+  lQi05ZkAAAAJ:UqWtYh3YZQwC:
+    citations: 9
+    title: Dual-fofe-net neural models for entity linking with pagerank
+    year: '2019'
+  lQi05ZkAAAAJ:UrmhOAI2Q4QC:
+    citations: 3
+    title: A Multi-task Learning Approach for Named Entity Recognition using Local Detection
+    year: '2019'
+  lQi05ZkAAAAJ:VTFyEh86FacC:
+    citations: 2
+    title: Exploring Cross-Lingual Transfer Learning with Unsupervised Machine Translation
+    year: '2021'
+  lQi05ZkAAAAJ:VkeQIIOIVywC:
+    citations: 181
+    title: Fast adaptation of deep neural network based on discriminant codes for speech recognition
+    year: '2014'
+  lQi05ZkAAAAJ:W7OEmFMy1HYC:
+    citations: 54
+    title: Incorporating training errors for large margin HMMs under semi-definite programming framework
+    year: '2007'
+  lQi05ZkAAAAJ:WP_jKstdCMYC:
+    citations: 147
+    title: 'Probabilistic Reasoning via Deep Learning: Neural Association Models'
+    year: '2016'
+  lQi05ZkAAAAJ:WbkHhVStYXYC:
+    citations: 9
+    title: Large-Margin Estimation of Hidden Markov Models With Second-Order Cone Programming for Speech Recognition
+    year: '2010'
+  lQi05ZkAAAAJ:Wp0gIr-vW9MC:
+    citations: 12
+    title: Evaluating the Aurora connected digit recognition task-a bell labs approach.
+    year: '2001'
+  lQi05ZkAAAAJ:X5l_rLnKZGsC:
+    citations: 33
+    title: Nonrecurrent Neural Structure for Long-Term Dependence
+    year: '2017'
+  lQi05ZkAAAAJ:XsdrJKXBvEcC:
+    citations: 0
+    title: INTERSPEECH 2004-ICSLP
+    year: Unknown Year
+  lQi05ZkAAAAJ:Y0pCki6q_DkC:
+    citations: 48
+    title: 'A Bayesian approach to the verification problem: Applications to speaker verification'
+    year: '2001'
+  lQi05ZkAAAAJ:Y5dfb0dijaUC:
+    citations: 1
+    title: Second order cone programming (SOCP) relaxations for large margin HMMs in speech recognition
+    year: '2009'
+  lQi05ZkAAAAJ:YFjsv_pBGBYC:
+    citations: 9
+    title: Discriminative training of n-gram language models for speech recognition via linear programming
+    year: '2009'
+  lQi05ZkAAAAJ:ZeXyd9-uunAC:
+    citations: 13
+    title: A fast optimization method for large margin estimation of HMMs based on second order cone programming.
+    year: '2007'
+  lQi05ZkAAAAJ:Zph67rFs4hoC:
+    citations: 17
+    title: A constrained joint optimization method for large margin HMM estimation
+    year: '2005'
+  lQi05ZkAAAAJ:ZuybSZzF8UAC:
+    citations: 1310
+    title: Applying convolutional neural networks concepts to hybrid NN-HMM model for speech recognition
+    year: '2012'
+  lQi05ZkAAAAJ:_-QPzy9dQywC:
+    citations: 47
+    title: Content based News Recommendation via Shortest Entity Distance over Knowledge Graphs
+    year: '2019'
+  lQi05ZkAAAAJ:_Qo2XoVZTnwC:
+    citations: 8
+    title: Maximum relative margin estimation of HMMs based on N-best string models for continuous speech recognition
+    year: '2005'
+  lQi05ZkAAAAJ:_elGeoH1qXkC:
+    citations: 163
+    title: Learning semantic word embeddings based on ordinal knowledge constraints
+    year: '2015'
+  lQi05ZkAAAAJ:_qBtHxPZqFwC:
+    citations: 19
+    title: A FOFE-based Local Detection Approach for Named Entity Recognition and Mention Detection
+    year: '2016'
+  lQi05ZkAAAAJ:a0OBvERweLwC:
+    citations: 5
+    title: Constrained minimization technique for topic identification using discriminative training and support vector machines.
+    year: '2004'
+  lQi05ZkAAAAJ:aPC4W50LcyUC:
+    citations: 1
+    title: Discriminative training and support vector machine for natural language call routing.
+    year: '2005'
+  lQi05ZkAAAAJ:bEWYMUwI8FkC:
+    citations: 11
+    title: A compact semidefinite programming (SDP) formulation for large margin estimation of HMMs in speech recognition
+    year: '2007'
+  lQi05ZkAAAAJ:bIWuQ2t9ofkC:
+    citations: 102
+    title: 'Feedforward sequential memory networks: A new structure to learn long-term dependency'
+    year: '2015'
+  lQi05ZkAAAAJ:c0PuCX1G1FcC:
+    citations: 13
+    title: A Deep Learning Based Fast Image Saliency Detection Algorithm
+    year: '2016'
+  lQi05ZkAAAAJ:cFHS6HbyZ2cC:
+    citations: 2
+    title: Bell labs approach to Aurora evaluation on connected digit recognition.
+    year: '2002'
+  lQi05ZkAAAAJ:dhFuZR0502QC:
+    citations: 12
+    title: Discriminative training for large margin HMMs
+    year: '2004'
+  lQi05ZkAAAAJ:eQOLeE2rZwMC:
+    citations: 31
+    title: Discriminative training of CDHMMs for maximum relative separation margin
+    year: '2005'
+  lQi05ZkAAAAJ:eflP2zaiRacC:
+    citations: 32
+    title: Boosted mixture learning of Gaussian mixture Hidden Markov models based on maximum likelihood for speech recognition
+    year: '2011'
+  lQi05ZkAAAAJ:fPk4N6BV_jEC:
+    citations: 4
+    title: Statistical noise compensation for cochlear implant processing.
+    year: '2005'
+  lQi05ZkAAAAJ:fQNAKQ3IYiAC:
+    citations: 3
+    title: Phase-sensitive speech enhancement for cochlear implant processing
+    year: '2011'
+  lQi05ZkAAAAJ:g0Hda-A7MjsC:
+    citations: 123
+    title: 'FreebaseQA: A new factoid QA data set matching trivia-style question-answer pairs with Freebase'
+    year: '2019'
+  lQi05ZkAAAAJ:g5h4crcM1N4C:
+    citations: 5
+    title: Exploring question understanding and adaptation in neural-network-based question answering. CoRR abs
+    year: '2017'
+  lQi05ZkAAAAJ:g5m5HwL7SMYC:
+    citations: 9
+    title: Tree-based covariance modeling of hidden markov models
+    year: '2006'
+  lQi05ZkAAAAJ:gOXF9J3PlnEC:
+    citations: 20
+    title: Part-of-Speech Relevance Weights for Learning Word Embeddings
+    year: '2016'
+  lQi05ZkAAAAJ:h0bj9BThk1MC:
+    citations: 2
+    title: Simplified Hierarchical Recurrent Encoder-Decoder for Building End-To-End Dialogue Systems
+    year: '2018'
+  lQi05ZkAAAAJ:h9UAY_4_kLEC:
+    citations: 116
+    title: System and method for applying a convolutional neural network to speech recognition
+    year: '2017'
+  lQi05ZkAAAAJ:hC7cP41nSMkC:
+    citations: 11
+    title: A general approximation-optimization approach to large margin estimation of HMMs
+    year: '2007'
+  lQi05ZkAAAAJ:hCrLmN-GePgC:
+    citations: 32
+    title: Investigation on dimensionality reduction of concatenated features with deep neural network for LVCSR systems
+    year: '2012'
+  lQi05ZkAAAAJ:hMG6n2O2MHsC:
+    citations: 0
+    title: Incorporating correlations among gene ontology terms into predicting protein functions
+    year: '2013'
+  lQi05ZkAAAAJ:hnLuywnv79wC:
+    citations: 24
+    title: Cause-Effect Knowledge Acquisition and Neural Association Model for Solving A Set of Winograd Schema Problems
+    year: Unknown Year
+  lQi05ZkAAAAJ:hwNCEvm7wWMC:
+    citations: 0
+    title: The USTC NELSLIP Systems for Trilingual Entity Detection and Linking Tasks at TAC KBP 2016
+    year: '2016'
+  lQi05ZkAAAAJ:hzzPUFEODy8C:
+    citations: 90
+    title: Higher Order Recurrent Neural Networks
+    year: '2016'
+  lQi05ZkAAAAJ:i2WBo1Z0jAEC:
+    citations: 0
+    title: Sequential Bayesian learning of CDHMM based on finite mixture approximation of its prior/posterior density
+    year: '1997'
+  lQi05ZkAAAAJ:iH-uZ7U-co4C:
+    citations: 8
+    title: A constrained line search optimization for discriminative training in speech recognition
+    year: '2007'
+  lQi05ZkAAAAJ:iLjPvThLa1EC:
+    citations: 28
+    title: Feedforward sequential memory neural networks without recurrent feedback
+    year: '2015'
+  lQi05ZkAAAAJ:j3f4tGmQtD8C:
+    citations: 11
+    title: Discriminative training of naive Bayes classifiers for natural language call routing
+    year: '2004'
+  lQi05ZkAAAAJ:jT7pUvmeQrMC:
+    citations: 12
+    title: Neural Networks Models for Entity Discovery and Linking
+    year: '2016'
+  lQi05ZkAAAAJ:jldLm8U3Uk0C:
+    citations: 301
+    title: Generating images with recurrent adversarial networks
+    year: '2016'
+  lQi05ZkAAAAJ:jsRXtjpS08UC:
+    citations: 23
+    title: Commonsense Knowledge Enhanced Embeddings for Solving Pronoun Disambiguation Problems in Winograd Schema Challenge
+    year: '2016'
+  lQi05ZkAAAAJ:k1VWYO0b_yEC:
+    citations: 54
+    title: Explicit utilization of general knowledge in machine reading comprehension
+    year: '2019'
+  lQi05ZkAAAAJ:kNdYIx-mwKoC:
+    citations: 130
+    title: 'Discriminative training of HMMs for automatic speech recognition: A survey'
+    year: '2010'
+  lQi05ZkAAAAJ:k_IJM867U9cC:
+    citations: 8
+    title: A constrained line search approach to general discriminative HMM training
+    year: '2007'
+  lQi05ZkAAAAJ:lSLTfruPkqcC:
+    citations: 4
+    title: Hierarchical correlation compensation for hidden Markov models [speech recognition applications]
+    year: '2005'
+  lQi05ZkAAAAJ:mVmsd5A6BfQC:
+    citations: 15
+    title: Hierarchical stochastic feature matching for robust speech recognition
+    year: '2001'
+  lQi05ZkAAAAJ:maZDTaKrznsC:
+    citations: 29
+    title: Parameter estimation of statistical models using convex optimization
+    year: '2010'
+  lQi05ZkAAAAJ:mreOU37vpXEC:
+    citations: 69
+    title: A latent space theory for emergent abilities in large language models
+    year: '2023'
+  lQi05ZkAAAAJ:msDbofFIACkC:
+    citations: 4
+    title: Generating images with recurrent adversarial networks, CoRR abs/1602.05110
+    year: '2016'
+  lQi05ZkAAAAJ:mtdGyXoswmMC:
+    citations: 0
+    title: Effective Context and Fragment Feature Usage for Named Entity Recognition
+    year: '2019'
+  lQi05ZkAAAAJ:oNWKmzIW71IC:
+    citations: 174
+    title: A local detection approach for named entity recognition and mention detection
+    year: '2017'
+  lQi05ZkAAAAJ:pNtIkOHbxKsC:
+    citations: 5
+    title: Generating images with recurrent adversarial networks. 2016
+    year: Unknown Year
+  lQi05ZkAAAAJ:q2DxgONcQ68C:
+    citations: 11
+    title: "Psychoacoustically-motivated adaptive \u03B2-order generalized spectral subtraction for cochlear implant patients"
+    year: '2009'
+  lQi05ZkAAAAJ:qUcmZB5y_30C:
+    citations: 35
+    title: Solving large-margin hidden Markov model estimation via semidefinite programming
+    year: '2007'
+  lQi05ZkAAAAJ:qxL8FJ1GzNcC:
+    citations: 18
+    title: A data selection strategy for utterance verification in continuous speech recognition.
+    year: '2001'
+  lQi05ZkAAAAJ:r0Mn_QMdkyMC:
+    citations: 54
+    title: Speaker adaptation of hybrid NN/HMM model for speech recognition based on singular value decomposition
+    year: '2016'
+  lQi05ZkAAAAJ:rO6llkc54NcC:
+    citations: 9
+    title: Trust region-based optimization for maximum mutual information estimation of hmms in speech recognition
+    year: '2011'
+  lQi05ZkAAAAJ:roLk4NBRz8UC:
+    citations: 27
+    title: A dynamic in-search data selection method with its applications to acoustic modeling and utterance verification
+    year: '2005'
+  lQi05ZkAAAAJ:sFh2DmJudxsC:
+    citations: 79
+    title: Direct adaptation of hybrid DNN/HMM model for fast speaker adaptation in LVCSR based on speaker code
+    year: '2014'
+  lQi05ZkAAAAJ:sJsF-0ZLhtgC:
+    citations: 56
+    title: Incoherent training of deep neural networks to de-correlate bottleneck features for speech recognition
+    year: '2013'
+  lQi05ZkAAAAJ:sdbE4nmAF2cC:
+    citations: 0
+    title: A comparison of computational strategies for multi-label prediction of protein subcellular localizations
+    year: Unknown Year
+  lQi05ZkAAAAJ:sgVRHlApM4oC:
+    citations: 47
+    title: State-clustering based multiple deep neural networks modeling approach for speech recognition
+    year: '2015'
+  lQi05ZkAAAAJ:tDpssBwPv0IC:
+    citations: 22
+    title: System and method for applying a convolutional neural network to speech recognition
+    year: '2017'
+  lQi05ZkAAAAJ:tYsYx133VjAC:
+    citations: 51
+    title: Exploring question understanding and adaptation in neural-network-based question answering
+    year: '2017'
+  lQi05ZkAAAAJ:tp0eXr8pwPYC:
+    citations: 7
+    title: 'Discriminative learning of generative models: large margin multinomial mixture models for document classification'
+    year: '2015'
+  lQi05ZkAAAAJ:u-x6o8ySG0sC:
+    citations: 168
+    title: Large margin hidden Markov models for speech recognition
+    year: '2006'
+  lQi05ZkAAAAJ:u5HHmVD_uO8C:
+    citations: 554
+    title: 'Confidence measures for speech recognition: A survey'
+    year: '2005'
+  lQi05ZkAAAAJ:u9iWguZQMMsC:
+    citations: 1
+    title: A bounded trust region optimization for discriminative training of HMMs in speech recognition
+    year: '2010'
+  lQi05ZkAAAAJ:u_35RYKgDlwC:
+    citations: 3
+    title: Enhanced MAP adaptation of n-gram language models using indirect correlation of distant words
+    year: '2001'
+  lQi05ZkAAAAJ:ufrVoPGSRksC:
+    citations: 44
+    title: A comparative study on various confidence measures in large vocabulary speech recognition
+    year: '2004'
+  lQi05ZkAAAAJ:vDijr-p_gm4C:
+    citations: 11
+    title: Voice conversion in cochlear implantation
+    year: '2013'
+  lQi05ZkAAAAJ:viFR3AA6x-gC:
+    citations: 12
+    title: Word Embeddings based on Fixed-Size Ordinally Forgetting Encoding
+    year: '2017'
+  lQi05ZkAAAAJ:w8fV-8NuKYgC:
+    citations: 6
+    title: Bandlimiting Neural Networks Against Adversarial Attacks
+    year: '2019'
+  lQi05ZkAAAAJ:wSZe7iPyAHIC:
+    citations: 20
+    title: Rectified linear neural networks with tied-scalar regularization for LVCSR.
+    year: '2015'
+  lQi05ZkAAAAJ:wXeZnHswOLwC:
+    citations: 8
+    title: Generative Adversarial Metric
+    year: '2016'
+  lQi05ZkAAAAJ:wsgvyqnMGiIC:
+    citations: 0
+    title: Discrimiriative Training for Large Margin Hl\/[1\/Is
+    year: '2004'
+  lQi05ZkAAAAJ:xBbUbSzpRCkC:
+    citations: 5
+    title: A fast method for saliency detection by back-propagating a convolutional neural network and clamping its partial outputs
+    year: '2017'
+  lQi05ZkAAAAJ:xpOcSxJuMv8C:
+    citations: 29
+    title: Using neural network for identifying clickbaits in online news media
+    year: '2018'
+  lQi05ZkAAAAJ:xx6dpm3-DsgC:
+    citations: 11
+    title: Annealed gradient descent for deep learning
+    year: '2015'
+  lQi05ZkAAAAJ:yD5IFk8b50cC:
+    citations: 7
+    title: Boosted mixture learning of Gaussian mixture HMMs for speech recognition.
+    year: '2010'
+  lQi05ZkAAAAJ:zA6iFVUQeVQC:
+    citations: 2
+    title: Maximum mutual information estimation via second order cone programming for large vocabulary continuous speech recognition.
+    year: '2009'
