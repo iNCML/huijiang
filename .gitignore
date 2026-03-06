@@ -1,3 +1,4 @@
+.gitignore
 _site
 .bundle
 .sass-cache
@@ -12,4 +13,4 @@ node_modules/
 vendor
 .idea
 Gemfile.lock
-.gitignore
+.bundle_home/
