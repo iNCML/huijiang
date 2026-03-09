@@ -62,17 +62,7 @@ If Alice and Bob share a channel, they can pay each other directly. If Alice doe
 Alice → Carol → Dave → Bob
 ```
 
-This gives Lightning two scaling properties at once. First, it compresses many bilateral updates into a small number of on-chain transactions. Second, it allows a network of local channels to approximate global reach through routing.
-
-The protocol achieves this while preserving several strong goals:
-
-- either channel party can unilaterally exit to Bitcoin main chain
-- outdated states are punishable
-- routed payments are atomic
-- intermediaries do not need custody over user funds
-- final settlement remains in BTC on Bitcoin main chain
-
-Those guarantees come from a combination of multisignature funding outputs, commitment transactions, revocation keys, timelocks, and HTLCs.
+This gives Lightning two scaling properties at once. First, it compresses many bilateral updates into a small number of on-chain transactions. Second, it allows a network of local channels to approximate global reach through routing. From a technical perspective, Lightning relies on  a combination of multisignature funding outputs, commitment transactions, revocation keys, timelocks, and HTLCs.
 
 ---
 
@@ -358,13 +348,13 @@ This is what prevents a party from being trapped in a window where the old state
 
 #### Why the protocol is safe
 
-In this case, Alice is paying Bob and wants to move from S0 to S1.
+In this case, Alice is paying Bob and wants to move from `S0` to `S1`.
 
-- Bob first sends Alice the signature needed for **Alice’s** S1 commitment transaction
-- only after Alice already has a safe S1 close does she reveal the revocation secret for S0
-- then Alice sends Bob the signature for **Bob’s** S1 commitment transaction
+- Alice first sends Bob the signature needed for **Bob’s** `S1` commitment transaction
+- only after Bob already has a safe `S1` close does he reveal the revocation secret for `S0`
+- then Bob sends Alice the signature for **Alice’s** `S1` commitment transaction
 
-So if someone tries to broadcast S0 *before* revocation, S0 was still valid. No theft occurs. If someone broadcasts S0 *after* revocation, the counterparty can punish. There is no unsafe middle ground.
+So if someone tries to broadcast `S0` *before* revocation, `S0` was still valid. No theft occurs. If someone broadcasts `S0` *after* revocation, the counterparty can punish. There is no unsafe middle ground.
 
 ### 3.3 Force Close vs Cooperative Close
 
@@ -420,9 +410,7 @@ Lightning security assumes someone is watching the blockchain for revoked-state 
 3. the watchtower scans the chain for matching breach hints  
 4. if a revoked commitment transaction appears, the tower broadcasts the penalty transaction
 
-In effect, the watchtower acts as an outsourced alarm bell and responder. It does not need custody of the funds, and well-designed watchtower schemes preserve privacy by storing only encrypted blobs and small identifiers.
-
-In a cooperative close, the tower never needs to act. But its mere existence makes offline use safer.
+In effect, the watchtower acts as an outsourced alarm bell and responder. It does not need custody of the funds, and well-designed watchtower schemes preserve privacy by storing only encrypted blobs and small identifiers. In a cooperative close, the tower never needs to act. But its mere existence makes offline use safer.
 
 See the [Lightning Channel Explorer](https://incml.github.io/BTC-Explorer/btc-lightning-channel.html) for an interactive, step-by-step walkthrough of this example, with all the technical details explained in the context of the Lightning Network.
 
@@ -546,7 +534,7 @@ ENDIF
 
 Carol does the same with Dave, and Dave does the same with Bob. Thus, each hop sets up a conditional payment tied to the same hash `H`, but with different timeout values.
 
-At this point, Bob is the only party who knows the secret `s`. Therefore, only Bob can satisfy the final HTLC from Dave. When Bob claims that HTLC, he must reveal s. Once Dave sees s, he can use the same secret to claim his incoming HTLC from Carol. Carol then learns s and uses it to claim from Alice.
+At this point, Bob is the only party who knows the secret `s`. Therefore, only Bob can satisfy the final HTLC from Dave. When Bob claims that HTLC, he must reveal `s`. Once Dave sees `s`, he can use the same secret to claim his incoming HTLC from Carol. Carol then learns `s` and uses it to claim from Alice.
 
 So the mechanism has a very elegant structure:
 - the conditional payment commitments are created from Alice forward to Bob,
